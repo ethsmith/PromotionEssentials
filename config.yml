@@ -1,0 +1,35 @@
+#Enable this if you want players to put in a password to promote to a level that can break blocks and do commands
+Apply:
+  #Is applying Enabled?
+  Enabled: false
+  #This password can be anything i thought it was funny to make the default changeme
+  Password: changeme
+  #This is the default groups name in your permissions plugin
+  Defaultgroup: default
+  #This is the group they will be promoted to when the password is put in
+  Group: Member
+  #Can they move without putting in the password
+  Freeze: false
+  #This decides whether they can speak or not
+  Mute: false
+  #Do they get kicked from the server for using the wrong password
+  KickWrongPW: false
+  #Is the password blocked in chat?
+  BlockPWinChat: false
+#Timed Promotions! Enable it and you will be promoted to the group listed in the time listed!
+Time:
+  #Is it enabled?
+  Enabled: false
+  #What group will you be promoted to?
+  Group: false
+  #How long does it take to get promoted?
+  Time: 10
+  #Will the plugin keep counting while player is offline?
+  CountOffline: false
+#Buyable ranks
+Ranks:
+- Citizen,100
+#Here can you set a special promote command if you do not want to use the normal one. 
+#Set to none if you do not want to use this function
+#For example: pex user <player> group add <group>
+PromoteSyntax: none

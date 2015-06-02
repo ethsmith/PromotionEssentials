@@ -1,0 +1,27 @@
+name: PromotionEssentials
+version: 1.1
+author: TekkitCommando
+
+main: me.tekkitcommando.PromotionEssentials.MasterPromote
+
+softdepend: [PermissionsEx, GroupManager, PermissionsBukkit, bPermissions, Privileges, YAPP]
+depend: [Vault]
+
+commands:
+  buyrank:
+    usage: /buyrank [rank]
+  apply:
+    usage: /apply [pw]
+  mpreload:
+    usage: /mpreload
+  token:
+    usage: /token [token]
+  createtoken:
+    usage: /createtoken [group] [usage]
+  mpconfirm:
+    usage: /buyrank [rank]
+    aliases: [confirm]
+  ranks:
+    usage: /ranks
+  mpinfo:
+    usage: /mpinfo
