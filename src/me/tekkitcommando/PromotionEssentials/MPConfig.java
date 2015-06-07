@@ -80,12 +80,36 @@ public class MPConfig
 		addDefault(plugin.config, "Time.Group", false);
 		addDefault(plugin.config, "Time.Time", 10);
 		addDefault(plugin.config, "Time.CountOffline", false);
+		addDefault(plugin.config, "entities.players", true);
+		addDefault(plugin.config, "entities.zombies", false);
+		addDefault(plugin.config, "entities.skeletons", false);
+		addDefault(plugin.config, "entities.creepers", false);
+		addDefault(plugin.config, "entities.spiders", false);
+		addDefault(plugin.config, "entities.iron-golems", false);
+		addDefault(plugin.config, "entities.cave-spiders", false);
+		addDefault(plugin.config, "entities.bats", false);
+		addDefault(plugin.config, "entities.silverfish", false);
+		addDefault(plugin.config, "entities.slimes", false);
+		addDefault(plugin.config, "entities.witches", false);
+		addDefault(plugin.config, "entities.pig-zombies", false);
+		addDefault(plugin.config, "entities.blazes", false);
+		addDefault(plugin.config, "entities.ghasts", false);
+		addDefault(plugin.config, "entities.magma-cubes", false);
+		addDefault(plugin.config, "entities.withers", false);
+		addDefault(plugin.config, "entities.giant-zombies", false);
+		addDefault(plugin.config, "entities.enderdragons", false);
+		addDefault(plugin.config, "entities.endermites", false);
+		addDefault(plugin.config, "entities.guardians", false);
+		addDefault(plugin.config, "entities.elder-guardians", false);
+		addDefault(plugin.config, "entities.rabbits", false);
+		addDefault(plugin.config, "entities.animals", false);
 		List<String> ranks = new ArrayList<String>();
 		ranks.add("Citizen,100");
 		addDefault(plugin.config, "Ranks", ranks);
 		addDefault(plugin.config, "PromoteSyntax", "none");
 		
 		addDefault(plugin.messages, "NoPermissions", "&cYou do not have permissions to do this!");
+		addDefault(plugin.messages, "congratulations", "&cYou''ve earned &6%rank%&c for getting &6%kills%&c kills!");
 		addDefault(plugin.messages, "CreatedSign", "&a[PromotionEssentials]Successfully created a promotion sign!");
 		addDefault(plugin.messages, "UsedSign", "&a[PromotionEssentials]Successfully promoted to <group>!");
 		addDefault(plugin.messages, "UsedPW", "&a[PromotionEssentials]You have been successfully promoted to <group>!");
@@ -102,7 +126,6 @@ public class MPConfig
 		addDefault(plugin.messages, "BoughtRank", "&aBought rank <group>!");
 		addDefault(plugin.messages, "Confirm", "&5Type /mpconfirm to continue");
 		addDefault(plugin.messages, "PromotedAfterTime", "&aYou have been promoted to <group>!");
-		saveYamls();
 	}
 	
 	private static void addDefault(FileConfiguration f, String path, Object v)
