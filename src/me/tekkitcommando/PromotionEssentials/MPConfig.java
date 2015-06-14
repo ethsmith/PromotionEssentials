@@ -100,7 +100,6 @@ public class MPConfig
 		addDefault(plugin.config, "entities.enderdragons", false);
 		addDefault(plugin.config, "entities.endermites", false);
 		addDefault(plugin.config, "entities.guardians", false);
-		addDefault(plugin.config, "entities.elder-guardians", false);
 		addDefault(plugin.config, "entities.rabbits", false);
 		addDefault(plugin.config, "entities.animals", false);
 		List<String> ranks = new ArrayList<String>();
