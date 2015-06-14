@@ -7,8 +7,18 @@ import me.tekkitcommando.PromotionEssentials.Api.PlayerPromoteEvent.PROMOTIONTYP
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.Plugin;
+
+
+
+
+
 
 
 
@@ -16,7 +26,7 @@ import ru.tehkode.permissions.PermissionGroup;
 import ru.tehkode.permissions.PermissionUser;
 import ru.tehkode.permissions.bukkit.PermissionsEx;
 
-public class MasterPromotePermissions 
+public class MasterPromotePermissions implements Listener
 {
 	
 	private MasterPromote plugin = MasterPromote.instance;
@@ -42,7 +52,7 @@ public class MasterPromotePermissions
 		{
 			this.activePermissions = "PermissionsBukkit";
 		}
-		else if(Bukkit.getPluginManager().isPluginEnabled(bp))
+	 	else if(Bukkit.getPluginManager().isPluginEnabled(bp))
 		{
 			this.activePermissions = "bPermissions";
 		}

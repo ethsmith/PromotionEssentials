@@ -39,7 +39,6 @@ public class MasterPromote extends JavaPlugin implements MPPlugin
 	public FileConfiguration config;
 	public FileConfiguration messages;
 	public FileConfiguration token;
-	private String congratulations_message;
 	public Long nextsave;//Next autosave
 	public Map<String, Long> timepromote = new HashMap<String, Long>(); //All players who are waiting to get promoted
 	public Map<Player, String>confirm = new HashMap<Player, String>(); // All players who want to buy a rank
