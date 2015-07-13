@@ -37,6 +37,7 @@ public class MasterPromotePermissions implements Listener
 	private Plugin bp = Bukkit.getPluginManager().getPlugin("bPermissions");
 	private Plugin pr = Bukkit.getPluginManager().getPlugin("Privileges");
 	private Plugin yp = Bukkit.getPluginManager().getPlugin("YAPP");
+	private Plugin zp = Bukkit.getPluginManager().getPlugin("zPermissions");
 	
 	public void loadPermission()
 	{
@@ -63,6 +64,10 @@ public class MasterPromotePermissions implements Listener
 		else if(Bukkit.getPluginManager().isPluginEnabled(yp))
 		{
 			this.activePermissions = "YAPP";
+		}
+		else if(Bukkit.getPluginManager().isPluginEnabled(zp))
+		{
+			this.activePermissions = "zPermissions";
 		}
 		else
 		{
@@ -122,6 +127,10 @@ public class MasterPromotePermissions implements Listener
 			Bukkit.dispatchCommand(console, "yapp o:" + player.getName());
 			Bukkit.dispatchCommand(console, "yapp +g "  + group);
 			Bukkit.dispatchCommand(console, "yapp @");
+		}
+		else if(activePermissions.equalsIgnoreCase("zPermissions"))
+		{
+			Bukkit.dispatchCommand(console, "permissions player " + player.getName() + "addgroup " + group);
 		}
 	}
 
