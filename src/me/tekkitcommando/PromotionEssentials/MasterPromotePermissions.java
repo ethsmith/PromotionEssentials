@@ -1,7 +1,5 @@
 package me.tekkitcommando.PromotionEssentials;
 
-
-
 import me.tekkitcommando.PromotionEssentials.Api.PlayerPromoteEvent;
 import me.tekkitcommando.PromotionEssentials.Api.PlayerPromoteEvent.PROMOTIONTYPE;
 
@@ -14,13 +12,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.Plugin;
-
-
-
-
-
-
-
 
 import ru.tehkode.permissions.PermissionGroup;
 import ru.tehkode.permissions.PermissionUser;
