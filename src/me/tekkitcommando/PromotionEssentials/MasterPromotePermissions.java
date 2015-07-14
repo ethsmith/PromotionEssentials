@@ -121,7 +121,7 @@ public class MasterPromotePermissions implements Listener
 		}
 		else if(activePermissions.equalsIgnoreCase("zPermissions"))
 		{
-			Bukkit.dispatchCommand(console, "permissions player " + player.getName() + "addgroup " + group);
+			Bukkit.dispatchCommand(console, "permissions player" + " " + player.getName() + "setgroup" + " " + group);
 		}
 	}
 
