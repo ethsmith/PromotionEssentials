@@ -5,12 +5,8 @@ import me.tekkitcommando.PromotionEssentials.Api.PlayerPromoteEvent.PROMOTIONTYP
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.Plugin;
 
 import ru.tehkode.permissions.PermissionGroup;
@@ -121,7 +117,7 @@ public class MasterPromotePermissions implements Listener
 		}
 		else if(activePermissions.equalsIgnoreCase("zPermissions"))
 		{
-			Bukkit.dispatchCommand(console, "permissions player" + " " + player.getName() + "setgroup" + " " + group);
+			Bukkit.dispatchCommand(console, "permissions player " + player.getName() + "setgroup " + group);
 		}
 	}
 
