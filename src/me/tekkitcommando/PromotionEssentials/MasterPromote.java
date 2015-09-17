@@ -6,10 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
-
-
 import me.tekkitcommando.PromotionEssentials.Api.MPPlugin;
 import me.tekkitcommando.PromotionEssentials.Api.PlayerPromoteEvent.PROMOTIONTYPE;
 import me.tekkitcommando.PromotionEssentials.Commands.MPApplyCommand;
